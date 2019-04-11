@@ -1,6 +1,6 @@
 **TODO** 
   1. Add section on results. 
-  2. Setup __requirements.txt.
+  2. Setup __requirements.txt__.
 
 ## Introduction
 
