@@ -17,6 +17,7 @@ import requests
 from fake_useragent import UserAgent
 import time
 
+ran=False
 
 import difflib
 import math
@@ -67,8 +68,9 @@ def decompress(bytes_seq):
     return raw_html_file
 
 def cleanup():
-    os.remove('page.gz')
-    os.remove('page.html')
+    if ran:
+        os.remove('page.gz')
+        os.remove('page.html')
 
 
 def getRandomHeader():
@@ -112,6 +114,7 @@ def run(city,output):
 
     #logger.info("baseurl: %s",baseurl)
     #logger.info("baseurl2: %s",baseurl2)
+    ran=True
 
     for j in range(1, 11):
 
