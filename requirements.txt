@@ -1,0 +1,4 @@
+fake_useragent==0.1.7
+Click==7.0
+coloredlogs==7.3
+beautifulsoup4==4.7.1

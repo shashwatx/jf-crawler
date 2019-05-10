@@ -13,7 +13,6 @@ import logging
 logger = logging.getLogger("main")
 
 import random
-import requests
 from fake_useragent import UserAgent
 import time
 

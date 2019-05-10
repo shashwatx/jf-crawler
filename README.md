@@ -1,23 +1,37 @@
+# Introduction 
+  
+Crawls Job Adverts from a Popular Spanish Site using bs4.
+    
 **TODO** 
   1. Add section on results. 
-  2. Setup __requirements.txt__.
 
-## Introduction
 
-jf-crawler crawls a popular job web-site. 
-
-## Requirements
-
-The following components are required to launch the crawler.
- * Python
- * BeautifulSoup
+## Key Requirements
+Package | Version
+-----|------|
+[coloredlogs](https://pypi.org/project/coloredlogs/)|7.3| Logging
+[bs4](https://pypi.org/project/beautifulsoup4/) |4.7.1| HTML Parser
+[click](https://pypi.org/project/click/) |7.0| Command line args
 
 ## Usage
 
+**Generate help**
+
 ```
-python jf-crawler.py --city london -o london.out
+shashwat@homestation ~/repos/jf-crawler $ python jf-crawler.py --help
+Usage: jf-crawler.py [OPTIONS]
+
+Options:
+-c, --city [madrid|london|paris|amsterdam|berlin|barcelona]
+-o, --output TEXT               name of output file
+--help                          Show this message and exit.
+```
+
+**Example**
+```
+python jf-crawler.py --city paris -o paris.out
 ```
 
 ## License
 
-Code shall be released under [the MIT license](https://github.com/shashwatx/jf-crawler/blob/master/LICENSE)
+[MIT](https://github.com/shashwatx/jf-crawler/blob/master/LICENSE)
