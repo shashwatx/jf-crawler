@@ -1,19 +1,35 @@
+**TODO** 
+  1. Add section on results. 
+
 # Introduction 
   
 Crawls Job Adverts from a Popular Spanish Site using bs4.
     
-**TODO** 
-  1. Add section on results. 
+
+# License
+
+[MIT](https://github.com/shashwatx/jf-crawler/blob/master/LICENSE)
 
 
-## Key Requirements
+# Requirements
 Package | Version
 -----|------|
 [coloredlogs](https://pypi.org/project/coloredlogs/)|7.3| Logging
 [bs4](https://pypi.org/project/beautifulsoup4/) |4.7.1| HTML Parser
 [click](https://pypi.org/project/click/) |7.0| Command line args
 
-## Usage
+
+# Setup
+1. Clone the repo.
+```
+git clone git@github.com:shashwatx/jf-crawler.git
+```
+2. Install dependencies
+```
+pip install -r requirements.txt
+```
+
+# Usage
 
 **Generate help**
 
@@ -32,6 +48,3 @@ Options:
 python jf-crawler.py --city paris -o paris.out
 ```
 
-## License
-
-[MIT](https://github.com/shashwatx/jf-crawler/blob/master/LICENSE)
